@@ -142,3 +142,26 @@ alert(
 function hitungTotalPoin(p1, p2, p3) {
   return p1 + p2 + p3;
 }
+
+// ============================================================
+// AKTIVITAS 6: Array & For Loop — Daftar Menu Rekomendasi
+// ============================================================
+
+// TODO 6A:
+let menuRekomendasi = [
+  "Kopi Susu Gula Aren",
+  "Cappuccino",
+  "Es Kopi Americano",
+  "Croissant Cokelat",
+  "Roti Bakar Keju"
+];
+
+// TODO 6B:
+console.log("--- DAFTAR MENU REKOMENDASI ---");
+for (let i = 0; i < menuRekomendasi.length; i++) {
+  console.log((i + 1) + ". " + menuRekomendasi[i]);
+}
+
+// TODO 6C:
+console.log("Jumlah total menu: " + menuRekomendasi.length);
+console.log("=== TUGAS MANDIRI SELESAI DENGAN SUKSES! ===")
