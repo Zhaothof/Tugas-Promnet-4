@@ -100,3 +100,45 @@ console.log("poinMerchandise:", poinMerchandise);
 
 console.log("Jumlah Poin anda adalah:", total_poin);
 console.log("Poin Rata-Rata anda adalah:", poin_rata_rata);
+
+// ============================================================
+// AKTIVITAS 4: Percabangan if-else — Penentuan Tier Membership
+// ============================================================
+
+// TODO 4:
+let tierMember = "";
+let benefit = "";
+
+if (total_poin >= 100) {
+  tierMember = "Platinum";
+  benefit = "Diskon 20% + Gratis 1 Minuman Signature";
+} else if (total_poin >= 70) {
+  tierMember = "Gold";
+  benefit = "Diskon 10% di setiap transaksi";
+} else if (total_poin >= 40) {
+  tierMember = "Silver";
+  benefit = "Diskon 5% untuk menu minuman";
+} else {
+  tierMember = "Bronze";
+  benefit = "Member Reguler (kumpulkan poin untuk naik tier)";
+}
+
+console.log("Tier Member: " + tierMember);
+console.log("Benefit: " + benefit);
+
+alert(
+  "Nama: " + nama_pengunjung +
+  "\nTotal Poin: " + total_poin +
+  "\nTier: " + tierMember +
+  "\nBenefit: " + benefit
+);
+
+
+// ============================================================
+// AKTIVITAS 5: Function — Membuat Fungsi yang Bisa Dipakai Ulang
+// ============================================================
+
+// TODO 5A:
+function hitungTotalPoin(p1, p2, p3) {
+  return p1 + p2 + p3;
+}
